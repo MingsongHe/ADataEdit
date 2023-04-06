@@ -1,7 +1,7 @@
 ========================================================================
        MICROSOFT FOUNDATION CLASS LIBRARY : ADataEdit
 ========================================================================
-
+一个用Visual C++ 做的应用程序。将线切割机的cnc程序(.nc)转换成图形，用于检查cnc程序正确，或者在查看图形的状态下修改程序。
 
 AppWizard has created this ADataEdit application for you.  This application
 not only demonstrates the basics of using the Microsoft Foundation classes
