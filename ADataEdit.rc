@@ -1,0 +1,918 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ADataEdit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ADataEdit.ico"
+IDR_ADATAETYPE          ICON    DISCARDABLE     "res\\ADataEditDoc.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\icon2.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\icon3.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\Winupd.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  18, 18
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      IDC_COMBOX
+    BUTTON      ID_EDIT_FIND
+    BUTTON      ID_BUTTONRedrawView
+    SEPARATOR
+    BUTTON      ID_BUTTONZoomIn
+    BUTTON      ID_BUTTONZoomOut
+    BUTTON      ID_BUTTONZoomInW
+    BUTTON      ID_BUTTONZoomAll
+    SEPARATOR
+    BUTTON      ID_BUTTON32820
+    BUTTON      ID_BUTTONChartToUp
+    BUTTON      ID_BUTTONChartToDown
+    BUTTON      ID_BUTTONChartToL
+    BUTTON      ID_BUTTONChartToR
+    BUTTON      ID_BUTTONQUICKDRAW
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tF8",                   ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Insert a File",               ID_EDIT_INSERTAFILE
+        MENUITEM "&Go  To... \tCtrl+G",         ID_EDIT_GOTO
+        MENUITEM "GoTo Top\tCtrl+Home",         ID_EDIT_GOTOFILETOP
+        MENUITEM "GoTo Bottom\tCtrl+End",       ID_EDIT_GOTOFILEBOTTOM
+        MENUITEM "Find...",                     ID_EDIT_FIND
+        MENUITEM "Delete a Line  \tF6",         ID_EDIT_DELETEALINE
+        MENUITEM SEPARATOR
+        MENUITEM "Set  &Font",                  ID_EDIT_SETFONT
+        MENUITEM "Set  &Color",                 ID_EDIT_SETCOLOR
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+        MENUITEM SEPARATOR
+        MENUITEM "Setting Password",            ID_VIEW_SETTINGPASSWORD
+        MENUITEM "LineNo.",                     ID_VIEW_LINENO
+        MENUITEM "Attach Chart",                ID_VIEW_ATTACHCHART
+        MENUITEM "Inch",                        ID_VIEW_INCH
+    END
+    POPUP "Transmission"
+    BEGIN
+        MENUITEM "Send Out",                    ID_TRANSMISSIOM_SENDOUT
+        MENUITEM "Receive  In",                 ID_TRANSMISSIOM_RECEIVEIN
+        MENUITEM SEPARATOR
+        MENUITEM "Stop",                        ID_TRANSMISSIOM_STOP
+        MENUITEM "Pause",                       ID_TRANSMISSIOM_PAUSE
+        MENUITEM SEPARATOR
+        MENUITEM "Config Device",               ID_TRANSMISSIOM_CONFIGDEVICE
+    END
+    POPUP "Chart"
+    BEGIN
+        MENUITEM "Drawing",                     ID_CHART_DRAWING
+        MENUITEM "Save As...",                  ID_CHART_SAVEAS
+        MENUITEM "Setting",                     ID_CHART_SETTING
+        POPUP "Edit"
+        BEGIN
+            MENUITEM "Cut",                         ID_CHART_EDIT_CUT
+            MENUITEM "Copy",                        ID_CHART_EDIT_COPY
+            MENUITEM "Paste",                       ID_CHART_EDIT_PASTE
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ADataEdit...",         ID_APP_ABOUT
+    END
+END
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "DataFileEdit"
+    BEGIN
+        MENUITEM "&Undo",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Insert a File",               ID_EDIT_INSERTAFILE
+        MENUITEM "Insert a Line",               ID_EDIT_INSERTALINE
+    END
+END
+
+IDR_MENU3 MENU DISCARDABLE 
+BEGIN
+    POPUP "Communication"
+    BEGIN
+        MENUITEM "Stop",                        ID_TRANSMISSIOM_STOP
+        MENUITEM "Pause",                       ID_TRANSMISSIOM_PAUSE
+    END
+END
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "BMPFileEdit"
+    BEGIN
+        MENUITEM "Cu&t",                        ID_CHART_EDIT_CUT
+        MENUITEM "&Copy",                       ID_CHART_EDIT_COPY
+        MENUITEM "Paste",                       ID_CHART_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Save As...",                  ID_CHART_SAVEAS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_EDIT_GOTO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_END,         ID_EDIT_GOTOFILEBOTTOM, VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_EDIT_DELETEALINE,    VIRTKEY, NOINVERT
+    VK_F7,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F7,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F8,          ID_EDIT_UNDO,           VIRTKEY, NOINVERT
+    VK_HOME,        ID_EDIT_GOTOFILETOP,    VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "^G",           ID_EDIT_GOTO,           ASCII,  NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ADataEdit"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,21,16,21,20
+    LTEXT           "ADataEdit Version 1.0",IDC_STATIC,63,14,79,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999",IDC_STATIC,63,25,68,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_INSERTFILE DIALOGEX 0, 0, 385, 150
+STYLE DS_SYSMODAL | DS_NOFAILCREATE | WS_CHILD | WS_VISIBLE | 
+    WS_CLIPSIBLINGS | WS_BORDER
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",stc32,7,7,210,135,NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,226,26,151,115,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Preview:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,231,13,28,8
+    CONTROL         "Simply",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,281,14,36,10
+    EDITTEXT        IDC_EDIT1,323,13,43,12,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_GOTODIALOG DIALOG DISCARDABLE  0, 0, 137, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Go To..."
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,28,27,30,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Go To",IDC_OK,80,31,41,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,48,41,14
+    RTEXT           "Enter line number:",IDC_STATIC,7,13,56,8,NOT WS_GROUP
+    GROUPBOX        "",IDC_STATIC,7,7,123,59
+END
+
+IDD_TextColorDlg DIALOG DISCARDABLE  0, 0, 161, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Text Color Setting"
+FONT 12, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDC_OK,113,38,35,11
+    PUSHBUTTON      "Cancel",IDCANCEL,113,55,35,11
+    LTEXT           "Back ground",IDC_STATIC,17,19,42,8
+    LTEXT           "Text",IDC_STATIC,46,35,13,8
+    LTEXT           "Line Number",IDC_STATIC,19,52,40,8
+    GROUPBOX        "",IDC_STATIC,7,7,147,65
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,65,17,31,12
+    CONTROL         "List1",IDC_LIST2,"SysListView32",LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,65,33,31,12
+    CONTROL         "List1",IDC_LIST3,"SysListView32",LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,65,49,31,12
+END
+
+IDD_ConfigDevice DIALOG DISCARDABLE  0, 0, 343, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Config Device"
+FONT 10, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO1,61,26,39,62,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,61,43,39,46,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,61,60,39,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,61,77,39,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,61,94,39,45,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,61,111,39,59,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,61,128,39,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO8,166,26,47,48,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,166,45,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,166,66,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,166,88,24,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO9,281,26,47,45,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT4,281,45,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,281,66,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,281,88,24,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDC_OK,193,129,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,254,129,50,14
+    GROUPBOX        "Connection",IDC_STATIC,7,7,99,143,BS_CENTER
+    LTEXT           "Band Rate",IDC_STATIC,22,28,33,8
+    LTEXT           "Parity",IDC_STATIC,36,45,19,8
+    LTEXT           "Words Length",IDC_STATIC,12,62,43,8
+    LTEXT           "Stop Bits",IDC_STATIC,27,79,28,8
+    LTEXT           "Code Type",IDC_STATIC,20,96,35,8
+    LTEXT           "Comm. Port",IDC_STATIC,19,113,36,8
+    LTEXT           "Auto Xon/Xoff",IDC_STATIC,14,130,41,8
+    GROUPBOX        "Input",IDC_STATIC,115,7,106,110,BS_CENTER
+    LTEXT           "Contror Mode",IDC_STATIC,117,28,42,8
+    LTEXT           "Start String",IDC_STATIC,126,49,33,8
+    LTEXT           "End String",IDC_STATIC,127,70,32,8
+    LTEXT           "Time Out",IDC_STATIC,131,91,28,8
+    LTEXT           "Sec.",IDC_STATIC,197,91,15,8
+    GROUPBOX        "Output",IDC_STATIC,230,7,106,110,BS_CENTER
+    LTEXT           "Contror Mode",IDC_STATIC,232,28,42,8
+    LTEXT           "Start String",IDC_STATIC,241,49,33,8
+    LTEXT           "End String",IDC_STATIC,242,70,32,8
+    LTEXT           "Send Delay",IDC_STATIC,237,91,37,8
+    LTEXT           "ms",IDC_STATIC,312,91,10,8
+END
+
+IDD_COMMWORKONG DIALOG DISCARDABLE  0, 0, 108, 59
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Communication"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,70,23,25,23
+    LTEXT           "Communication Connect",IDC_STATIC,13,13,78,8
+    GROUPBOX        "",IDC_STATIC,7,7,94,44
+END
+
+IDD_PROPPAGE1 DIALOG DISCARDABLE  0, 0, 255, 111
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Line & Color"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "V",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,
+                    36,21,10
+    GROUPBOX        "Select Items",IDC_STATIC,15,17,47,80,BS_CENTER
+    CONTROL         "A",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,
+                    57,21,10
+    CONTROL         "AH",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,
+                    78,26,10
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,73,33,39,15
+    CONTROL         "List2",IDC_LIST3,"SysListView32",LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,73,55,39,15
+    CONTROL         "List2",IDC_LIST4,"SysListView32",LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,73,76,39,15
+    GROUPBOX        "Line Color",IDC_STATIC,67,17,56,80,BS_CENTER
+    GROUPBOX        "",IDC_STATIC,7,7,123,96
+    EDITTEXT        IDC_EDIT1,164,34,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,164,74,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "X Direction Scale Function",IDC_STATIC,145,18,95,33
+    GROUPBOX        "Y Direction Scale Function",IDC_STATIC,145,62,95,33
+    SCROLLBAR       IDC_SCROLLBAR1,205,34,15,14,SBS_VERT
+    SCROLLBAR       IDC_SCROLLBAR2,205,74,15,14,SBS_VERT
+    GROUPBOX        "",IDC_STATIC,7,7,241,96
+END
+
+IDD_PROPPAGE2 DIALOG DISCARDABLE  0, 0, 253, 116
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Text"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,76,31,100,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,7,239,101
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,191,30,38,15
+    EDITTEXT        IDC_EDIT7,76,60,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,76,81,100,14,ES_AUTOHSCROLL
+    LTEXT           "Titile Text",IDC_STATIC,29,33,32,8
+    LTEXT           "X Text",IDC_STATIC,39,63,22,8
+    LTEXT           "Y Text",IDC_STATIC,39,85,22,8
+    LTEXT           "Color",IDC_STATIC,200,18,17,8
+    CONTROL         "List1",IDC_LIST4,"SysListView32",LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,191,71,38,15
+END
+
+IDD_PROPPAGE3 DIALOG DISCARDABLE  0, 0, 255, 127
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Line Type"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,177,33,39,16
+    CONTROL         "List1",IDC_LIST2,"SysListView32",LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,177,84,39,16
+    CONTROL         "Solid",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,61,73,31,10
+    CONTROL         "None",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,61,97,31,10
+    CONTROL         "Dashed",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,61,85,40,10
+    GROUPBOX        "Grid",IDC_STATIC,17,64,219,47
+    GROUPBOX        "X.Y Line Color",IDC_STATIC,17,13,219,47
+    GROUPBOX        "",IDC_STATIC,7,7,241,112,BS_CENTER
+    LTEXT           "Double click color bar you can setting coordinates X and Y line color .",
+                    IDC_STATIC,43,29,112,27
+END
+
+IDD_PROPPAGE4 DIALOG DISCARDABLE  0, 0, 183, 94
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "w.w.w"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+CG_IDD_PAPDIALOGBAR DIALOG DISCARDABLE  0, 0, 9, 134
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ADataEdit MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ADataEdit\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ADataEdit.EXE\0"
+            VALUE "ProductName", "ADataEdit Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_INSERTFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 378
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_GOTODIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 130
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_TextColorDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_ConfigDevice, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_COMMWORKONG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_PROPPAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_PROPPAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_PROPPAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_PROPPAGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    CG_IDD_PAPDIALOGBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 2
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ConfigDevice DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO1, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_COMBO1, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_COMBO2, 0x403, 5, 0
+0x5645, 0x4e45, "\000" 
+    IDC_COMBO2, 0x403, 4, 0
+0x444f, 0x0044, 
+    IDC_COMBO2, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_COMBO3, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO5, 0x403, 6, 0
+0x5341, 0x4943, 0x0049, 
+    IDC_COMBO5, 0x403, 4, 0
+0x4945, 0x0041, 
+    IDC_COMBO5, 0x403, 4, 0
+0x5349, 0x004f, 
+    IDC_COMBO6, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO6, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO6, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO6, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO7, 0x403, 3, 0
+0x4e4f, "\000" 
+    IDC_COMBO7, 0x403, 4, 0
+0x464f, 0x0046, 
+    IDC_COMBO8, 0x403, 7, 0
+0x414d, 0x5453, 0x5245, "\000" 
+    IDC_COMBO8, 0x403, 6, 0
+0x4c53, 0x5641, 0x0045, 
+    IDC_COMBO8, 0x403, 3, 0
+0x4f4e, "\000" 
+    IDC_COMBO9, 0x403, 7, 0
+0x414d, 0x5453, 0x5245, "\000" 
+    IDC_COMBO9, 0x403, 6, 0
+0x4c53, 0x5641, 0x0045, 
+    IDC_COMBO9, 0x403, 3, 0
+0x4f4e, "\000" 
+    0
+END
+
+IDD_COMMWORKONG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0001, 0x0002, 0x0200, 
+0x0000, 0x0200, 0x0001, 0x12c0, 0x0000, 0x0002, 0x0007, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x003f, 0x0000, 0x000d, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER_COPY        CURSOR  DISCARDABLE     "arrowcop.cur"
+IDC_HANDMOVE            CURSOR  DISCARDABLE     "res\\handmove.cur"
+IDC_HandCURSOR          CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cur00001.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_DATE       "Date"
+    ID_INDICATOR_TIME       "Time"
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_PROPSHT_CAPTION     "Property Sheet"
+    CG_ID_VIEW_PAPDIALOGBAR "Show or hide Pap Dialog Bar\nToggle Pap Dialog Bar"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "ADataEdit\n\nADataE\nADataE Files (*.dat)\n.dat\nADataEdit.Document\nADataE Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ADataEdit"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP""                             """
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_CARET      """X:999.999 Y:999.999 S:999.9"""
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_SEND_MAIL       "Send the active document through electronic mail\nSend Mail"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_LINENO          "Disply line nomber in font"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CHART_DRAWING        "Draw a chart use exit data "
+    ID_CHART_SAVEAS         "Save the active chart with a new name\nSave As"
+    ID_CHART_SETTING        "Setup draw function"
+    ID_CHART_EDIT_CUT       "Inside cut to clipbord"
+    ID_DATAFILEEDIT_UNDO    "Undo the last action\nUndo"
+    ID_DATAFILEEDIT_CUT     "Cut the selection and put it on the Clipboard\nCut"
+    ID_DATAFILEEDIT_COPY    "Copy the selection and put it on the Clipboard\nCopy"
+    ID_DATAFILEEDIT_PASTE   "Insert Clipboard contents\nPaste"
+    ID_DATAFILEEDIT_INSERTALINE "Insert a new line in current position"
+    ID_DATAFILEEDIT_INSERTAFILE "Insert a data File in current position"
+    ID_BMPFILEEDIT_CUT      "Inside cut to clipbord"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BMPFILEEDIT_SAVEAS   "Save the active chart with a new name\nSave As"
+    IDC_COMBOX              "Find  String  Edit  Box"
+    ID_BUTTON32805          "Finds  the  Specified  Text\nFinds  the  Specified  Text"
+    ID_BUTTON32806          "Zoom In\nZoom In"
+    ID_BUTTON32807          "Zoom Out\nZoom Out"
+    ID_BUTTON32808          "Zoom  in  Windows/nZoom  in  Windows"
+    ID_BUTTON32809          "Zoom All\nZoom All"
+    ID_BUTTON32810          "Move  Chart  to  Up\nMove  Chart  to  Up"
+    ID_BUTTONChartToDown    "Move  Chart  to  Down\nMove  Chart  to  Down"
+    ID_BUTTON32812          "Move  Chart  to  Right\nMove  Chart  to  Right"
+    ID_BUTTONChartToL       "Move  Chart  to  Left\nMove  Chart  to  Left"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTONQUICKDRAW      "Quickly drawing whial draft"
+    ID_VIEW_ATTACHCHART     "Attach Chart on Right of Screen."
+    ID_BUTTONRedrawView     "Redraw View"
+    ID_VIEW_INCH            "Display in inch"
+    ID_EDIT_GOTOFILETOP     "Go to File First Line"
+    ID_EDIT_GOTOFILEBOTTOM  "Go To File Last Line"
+    ID_EDIT_DELETEALINE     "Delete a Line"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ADataEdit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
